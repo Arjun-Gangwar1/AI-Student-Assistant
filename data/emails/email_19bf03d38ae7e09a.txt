@@ -1,0 +1,61 @@
+From: Rajshekar K <rajshekar.k@iitdh.ac.in>
+To: Students <students@iitdh.ac.in>
+Subject: Announcing a certification course "Quantum Computing : Systems and Architecture"
+Date: Sat, 24 Jan 2026 19:11:23 +0530
+Message-ID: 19bf03d38ae7e09a
+Attachments: 1
+
+Dear Students,
+
+We are planning a certification course on "Quantum Computing : Systems and
+Architecture". The course will deal with Quantum Computing more from the
+Computer Systems perspective. The course description is attached.
+
+The course will be offered by Prof. Kolin Paul (website
+<https://kolinpaul.github.io/>) from IIT Delhi. He has contributed in
+various fields within the Computer Systems domain like Computer
+Architecture, Embedded Systems, Accelerator Design, High Performance
+Computing, and Cyberphysical System Security. He is also a great teacher,
+and this will be a nice opportunity to learn from him.
+
+If you are interested in attending the course, please fill this form
+<https://docs.google.com/forms/d/e/1FAIpQLSesUJU4BorEoym8378LP6ug-Dzq8pjYoG9cQ7nbjJINVJ7mug/viewform?usp=publish-editor>.
+Further communication will be restricted to those who fill the form. Please
+fill the form by 26th January 5 PM.
+
+Particulars:
+
+   - The course will be open to all students who have done a course on
+   Linear Algebra, done a course on programming, and have exposure to the idea
+   of computing.
+   - The course will have an evaluatory component in the form of small
+   quizzes and/ or programming assignments. Students who successfully complete
+   all the components will be issued certificates at the end of the course.
+   (Students not interested in the certificate are also welcome :) )
+   - It is a 10-hour course, spread across 5 days. The course dates are
+   February 10th (Tuesday) to February 14th (Saturday). The classes from
+   Tuesday to Friday will run from 6:30 PM to 8:30 PM, and the class on
+   Saturday will run from 10:00 AM to 12:00 noon. (Note that the days may
+   shift by a day or two based on the instructor's availability.)
+   - The venue will be a classroom in the CLT. The course will be in
+   offline mode only.
+   - Please note that no credits can be earned through this course. This is
+   purely for learning only!
+
+Regards,
+Rajshekar
+
+
+-- 
+Rajshekar K
+Assistant Professor
+Department of Computer Science and Engineering
+Indian Institute of Technology Dharwad
+Dharwad, Karnataka, India.
+https://www.iitdh.ac.in/rajshekar.k/
+
+
+
+
+--- Attachments ---
+- quantumCourse.pdf (0.07MB) - Path: data/attachments/email_19bf03d38ae7e09a/quantumCourse.pdf

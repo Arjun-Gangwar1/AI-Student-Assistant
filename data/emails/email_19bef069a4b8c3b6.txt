@@ -1,0 +1,51 @@
+From: Animesh Kumar Sahoo <animesh.sahoo@iitdh.ac.in>
+To: Seminars <seminars@iitdh.ac.in>, peg-iitdh@googlegroups.com
+Subject: SPS for MS Student Mr Lipun Kumar Naik (EE24MS001)
+Date: Sat, 24 Jan 2026 13:32:09 +0530
+Message-ID: 19bef069a4b8c3b6
+Attachments: 0
+
+Dear all,
+
+The semester progress seminar (SPS) for MS student Mr Lipun Kumar Naik
+(EE24MS001) is scheduled as per the details below:
+
+*Date*: 28/01/2026
+*Time*: 04:15 pm - 04:45 pm
+*Venue*: (Online Mode) Video call link: https://meet.google.com/znu-icro-hve
+
+*Title*: A Hybrid Islanding Detection Strategy for Synchronverter-Based
+Grid-Forming Inverters Under LVRT Constraints in Inverter-Dominated Power
+Systems.
+
+*Abstract*: The growing deployment of grid-forming inverter-based resources
+(IBRs), particularly Synchronverter-based grid-forming inverters (GFMs),
+has introduced new challenges for islanding detection in inverter-dominated
+power systems. Reliable and grid-code-compliant detection has therefore
+become increasingly important. Conventional methods demonstrate limited
+effectiveness in multi-inverter environments and often result in large
+non-detection zones (NDZs). These challenges are further intensified by
+low-voltage ride-through (LVRT) requirements. This work investigates a
+hybrid islanding detection strategy for Synchronverter-based GFMs, which
+coordinates LVRT behavior with complementary detection features. The
+proposed approach is currently being evaluated using a modified CIGRE
+low-voltage benchmark system with mixed grid-forming and grid-following
+inverters. Initial results suggest promising potential for future
+low-inertia power systems.
+
+You are warmly invited to attend the presentation.
+
+regards
+Animesh
+
+-- 
+Dr. Animesh Kumar Sahoo
+Assistant Professor
+Department of EECE
+IIT Dharwad - 580007
+
+-- 
+You received this message because you are subscribed to the Google Groups "Seminars" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to seminars+unsubscribe@iitdh.ac.in.
+To view this discussion visit https://groups.google.com/a/iitdh.ac.in/d/msgid/seminars/CAEeVEoY_JRg_4DgFTGrWZCQ4woAi1_DKTfXMOpTOuuEALUg0CQ%40mail.gmail.com.
+

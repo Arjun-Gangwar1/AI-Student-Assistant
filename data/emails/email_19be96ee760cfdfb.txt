@@ -1,0 +1,57 @@
+From: Dhiraj Patil <dhiraj@iitdh.ac.in>
+To: Seminars <seminars@iitdh.ac.in>
+Subject: 3rd Annual Progress Seminar of Mr. Harsh Kumar Rai (ME22DP003)
+Date: Fri, 23 Jan 2026 11:28:11 +0530
+Message-ID: 19be96ee760cfdfb
+Attachments: 0
+
+Dear All,
+
+*Mr. Harsh Kumar Rai (Roll #: ME22DP003)*, a PhD scholar in the Department
+of Mechanical, Materials, and Aerospace Engineering, will be
+presenting his *3rd
+Annual Progress Seminar* as per the following details. All are welcome to
+attend the progress seminar.
+
+*Title:* Computational studies of universal droplet pinch-off dynamics and
+dripping-to-jetting transition
+*Date:* January  23rd, 2026
+*Time:* 2:30 PM
+*Venue:* A1, 102
+*Join with Google Meet:* meet.google.com/eyi-xeve-jmy
+*Abstract:*  This APS report presents the validation studies conducted for
+the developed solver. The test cases, such as Rayleigh-Taylor instability,
+drop under oscillation, and drop under shear, are designed to validate the
+capability of the developed 2-dimensional phase-field lattice Boltzmann
+solver for two-phase flows. Further, the two-dimensional solver is extended
+to three dimensions in space, and test cases, such as single-bubble rise in
+a quiescent, denser fluid column, along with drop oscillation and drop
+under shear flow, are performed. After performing the validation studies, a
+3D drop pinch-off problem is solved using the current developed algorithm.
+The solver captures all physical phenomena, including drop growth, necking,
+and the formation of primary and satellite drops. The necking follows the
+scaling laws reported in the literature, and the transition from dripping
+to jetting is captured at the critical Weber number, as predicted.
+
+Yours sincerely,
+Dhiraj.
+--------------------------------------------------------------------------------
+Dr. Dhiraj V. Patil
+Associate Professor (Homepage
+<https://sites.google.com/site/dvpmultiplefluidsatiitmandi/>)
+Dean (Outreach, Alumni & Corporate Relations),
+Department of Mechanical, Materials, & Aerospace Engineering (MMAE),
+Indian Institute of Technology Dharwad,
+Dharwad - 580011, Karnataka, India.
+--------------------------------------------------------------------------------
+*Ph.D., Dept. of Aerospace Engg.*, Indian Institute of Science Bangalore
+*Postdoctoral Research Associate, EMU*, JNCASR, Bangalore, India,
+*Postdoc, The CUNY Energy Institute, *CCNY, New York, USA,
+*Senior **Research Associate, IIE*, University of Edinburgh, Scotland, UK.
+*IIT-DAAD Faculty Exchange,* Karlsruhe Institute of Technology, Germany
+
+-- 
+You received this message because you are subscribed to the Google Groups "Seminars" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to seminars+unsubscribe@iitdh.ac.in.
+To view this discussion visit https://groups.google.com/a/iitdh.ac.in/d/msgid/seminars/CAAPzHEk3DPvLROk2hN75s%3D-DJN1iW7AwZ5J%3DUhReDwssC%2BG0ZA%40mail.gmail.com.
+

@@ -1,0 +1,54 @@
+From: Kundan Kumar Singh Sagar <kksingh@iitdh.ac.in>
+To: Seminars <seminars@iitdh.ac.in>
+Subject: First APS of Mr. Pavan Bavanavar
+Date: Sat, 24 Jan 2026 11:41:10 +0530
+Message-ID: 19beea1047cc9466
+Attachments: 0
+
+Dear All,
+
+*Mr. Pavan Bavanavar (Roll no. cy24dp008)*, a PhD scholar in the Department
+of Chemistry, will be presenting his first annual progress seminar (APS) as
+per the following details.
+
+*Title: *Synthesis of Nickel Nanocluster and its Application in Urea
+Synthesis by Electrocoupling of Nitrate and Carbon Dioxide.
+*Venue:* A2-119
+*Date:* January 27th, 2026
+*Time:* 2:00 - 3:00 PM
+All are welcome to attend.
+
+*Abstract:* Metal nanoclusters (NCs) are widely recognized as a critical
+bridge between molecular metal complexes and metal nanoparticles (NPs).
+Compared to conventional catalysts based on metal NPs, metal NCs have
+well-defined structures in both the arrangement of metal atoms in the core
+as well as the ligand-binding modes on the surface; they possess unique
+size-dependent catalytic, optical, and electronic properties. In this
+regard, several thiolate-protected gold (Au) and silver (Ag) NCs have been
+reported as model catalysts due to their ease of synthesis, well-resolved
+crystal structure and high stability. However, as an alternative to
+noble-metal-based nanocatalysts, nickel (Ni) nanoclusters have emerged as
+an important catalytic material owing to their earth-abundance, rich redox
+chemistry, and strong metal–substrate interactions. Herein, we have shown
+the synthesis of nickel clusters, Ni6OL12 and Ni6CL12, stabilised by new
+thiolate ligands and their application in electrochemical synthesis of urea
+using CO2 and NO3- as substrates. Electrochemical studies revealed
+catalytic activity for CO₂ and NO₃⁻ reduction, and product analysis after
+controlled-potential electrolysis (CPE) at various potentials confirmed the
+formation of urea and NH₃. Furthermore, the role of the ligand environment
+was elucidated through comparative studies with an analogous nickel
+cluster, which features a single-atom ligand modification, highlighting the
+crucial influence of the ligand on catalytic efficiency and selectivity.
+
+
+Thank You and Regards,
+
+Kundan K. Singh, PhD
+Assistant Professor,
+Department of Chemistry, IIT Dharwad
+
+-- 
+You received this message because you are subscribed to the Google Groups "Seminars" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to seminars+unsubscribe@iitdh.ac.in.
+To view this discussion visit https://groups.google.com/a/iitdh.ac.in/d/msgid/seminars/CALDF%2BxD4DM3k09wawNOLFkEfdGEEgQeWZBT7LhQa-z83GtKdmg%40mail.gmail.com.
+

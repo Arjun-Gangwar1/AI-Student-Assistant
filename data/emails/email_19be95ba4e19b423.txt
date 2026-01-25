@@ -1,0 +1,59 @@
+From: Mahesh Gudem <maheshg@iitdh.ac.in>
+To: Seminars <seminars@iitdh.ac.in>
+Subject: First APS of Ms. Anjana Vijayan
+Date: Fri, 23 Jan 2026 11:07:14 +0530
+Message-ID: 19be95ba4e19b423
+Attachments: 0
+
+Dear All,
+
+Ms. Anjana Vijayan, a PhD scholar in the Department of Chemistry, will be
+presenting her first Annual Progress Seminar as per the following details.
+
+*Title:* Mechanistic Exploration of Gas-Phase Chemiluminescence using
+Multi-Reference Electronic Structure Methods
+*Date:* 27th January 2025
+*Time:* 11:30 AM
+*Venue:* A2, 119
+
+*Abstract: *Chemiluminescence (CL) involves the emission of light as a
+result of a chemical reaction. Such a process occurring inside a living
+organism is referred to as bioluminescence, with examples including firefly
+beetle, dinoflagellates and some fungi. In most of the CL systems, light
+emission originates from the dissociation of a certain cyclic peroxide
+ring, where conical intersections near the ground-state transition state
+enable the molecule to populate multiple electronic states. However, CL
+systems other than cyclic peroxides remain underexplored, and a general
+mechanistic framework of cold-light emission is still lacking. A recent
+theoretical study on air afterglow (NO+O) CL reaction revealed a distinct
+mechanism in which the ground-state pathway bifurcates via valley-ridge
+inflection, leading to the formation of NO2 in the ground and excited
+electronic states. Motivated from these insights, we are currently
+exploring the mechanistic details of SO+O reaction using multireference
+electronic structure methods such as CASSCF and CASPT2, combined with
+non-adiabatic dynamics. The study involves constructing potential energy
+surfaces (PESs), identifying minimum energy paths, and computing branching
+ratios among the accessible reaction channels. Our results suggest that the
+formation of SO2 in different electronic states, interestingly, involves a
+ridge-mediated bifurcation of the first triplet-state pathway. SO2
+afterglow, has been primarily attributed to the triplet states of sulfur
+dioxide (SO2) along with singlet excited states. CL mechanism in SO+O
+aligns more closely with the (NO+O) CL reaction.This study provides new
+fundamental insights into the chemiluminescence phenomenon and also gives
+evidence that VRI-mediated pathways can be general motifs in gas-phase CL
+reactions.
+
+-- 
+Regards,
+Mahesh
+Assistant Professor
+Department of Chemistry
+Indian Institute of Technology (IIT), Dharwad
+Karnataka 580011
+Web Page: https://mahialprhcu.wixsite.com/mgudem
+
+-- 
+You received this message because you are subscribed to the Google Groups "Seminars" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to seminars+unsubscribe@iitdh.ac.in.
+To view this discussion visit https://groups.google.com/a/iitdh.ac.in/d/msgid/seminars/CAJg-xPBLKbRhxmx_i760BncpNVcCD-qsBGT0yL770_Vu%3DX02TA%40mail.gmail.com.
+

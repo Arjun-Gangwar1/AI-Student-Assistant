@@ -1,0 +1,21 @@
+From: Gayathri Ananthanarayanan <gayathri@iitdh.ac.in>
+To: CS 2024 <cs2024@iitdh.ac.in>, MC 2024 <mc2024@iitdh.ac.in>, EP 2024 <ep2024@iitdh.ac.in>, Chilaka Manoj Kumar <220010013@iitdh.ac.in>, Aayushi Singh <is24bm037@iitdh.ac.in>, Kaustubh Mishra <is24bm046@iitdh.ac.in>
+Subject: CS301 Lab-2 Deadline extension
+Date: Sat, 24 Jan 2026 15:26:05 +0530
+Message-ID: 19bef6edc0623ca9
+Attachments: 0
+
+Hello All
+
+The lab-2 submission deadline has been extended to 31st January, 11.59PM
+and also updated in the moodle.
+
+Gayathri
+
+-- 
+Gayathri Ananthanarayanan
+Assistant Professor
+Department of Computer Science and Engineering
+Indian Institute of Technology Dharwad
+Dharwad, Karnataka-580007
+

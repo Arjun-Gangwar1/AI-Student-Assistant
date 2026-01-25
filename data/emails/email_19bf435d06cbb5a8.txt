@@ -1,0 +1,24 @@
+From: Parsec Team <outreach.parsec@iitdh.ac.in>
+To: mc24bt014@iitdh.ac.in
+Subject: Your Parsec Opening Ceremony Free Pass (ID: 3305d3 -FreePass)
+Date: Sun, 25 Jan 2026 08:12:02 +0000
+Message-ID: 19bf435d06cbb5a8
+Attachments: 1
+
+Hello mc24bt014@iitdh.ac.in,
+
+Thank you for attending the Opening Ceremony!
+
+Your free event pass has been issued successfully.
+
+Order ID: 3305d3 -FreePass
+Payment UTR: OpeningCeremony-FreePass
+Total Passes: 1
+
+Please show these QR codes at the event venue for entry.
+
+Thank you!
+
+
+--- Attachments ---
+- event-pass-qr-1.png (0.00MB) - Path: data/attachments/email_19bf435d06cbb5a8/event-pass-qr-1.png

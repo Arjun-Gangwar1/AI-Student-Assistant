@@ -1,0 +1,520 @@
+From: Kwikpic <info@kwikpic.co>
+To: Tanveer <mc24bt014@iitdh.ac.in>
+Subject: Learn to use Kwikpic: Part 3 of 4  -  Modify Group and Privacy settings
+Date: Sun, 25 Jan 2026 05:59:48 +0000
+Message-ID: 19bf3bcba865382a
+Attachments: 0
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<title></title>
+	<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet"><!--<![endif]--><meta content="width=device-width" name="viewport">
+	<style type="text/css">/* #### Mobile Phones Portrait #### */
+	/* #### iPhone 4+ Portrait or Landscape #### */
+	@media only screen and (max-width: 480px){
+		table[class=contentInner] {width:100% !important;padding:0px;margin:0px;}
+		img[class=zpImage]{width:260px !important;max-width: 360px !important;text-align:center;margin:0px;padding:0px} 
+		body, table, td, p, li,div,span, blockquote{-webkit-text-size-adjust:none !important;margin:0px auto;line-height:1.7}
+		table[class=zpImageCaption]{text-align:left;}
+		table[class=cols]{width:100% !important;max-width:100% !important;text-align:left;}
+		table[class=zpcolumns] {text-align:left;margin:0px;} 
+		table[class=zpcolumn] {text-align:left;margin:0px;} 
+		table[class=zpAlignPos]{width:100%;text-align:left;margin:0px;} 
+		td[class=txtsize]{font-size:18px !important;}
+		td[class=paddingcomp]{ padding-left: 15px !important; padding-right: 15px !important }
+		td[class=bannerimgpad]{padding:0px !important;}
+		span[class=txtsize]{font-size:18px !important;}
+		img[size = "B"]{width: 100% !important;max-width:100% !important;margin: 0px !important;padding:0px !important;}
+		img[size = "F"]{width: 100% !important;max-width:100% !important;margin: 0px !important;padding:0px !important;}
+		img[size = "S"]{width:105px !important; height:auto; margin:0px auto !important;padding:0px !important;}
+		img[size = "M"]{width:277.869px !important;height:auto;margin:0px auto !important;padding:0px !important;}
+		h1{
+			font-size:28px !important;
+			line-height:100% !important;
+		}
+		h2{
+			font-size:24px !important;
+			line-height:100% !important;
+		}
+		h3{
+			font-size:20px !important;
+			line-height:100% !important;
+		}
+		h4{
+			font-size:18px !important;
+			line-height:100% !important;
+		}
+		}		
+		@media only screen and (max-width: 480px){
+		.zpImage{
+			height:auto !important;
+			width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.contentInner,.cols,.zpAlignPos{
+			width:100% !important;
+			max-width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.paddingcomp{
+			padding-left: 15px !important;
+			padding-right: 15px !important; 
+		}
+		.bannerimgpad{
+			padding:0px !important;
+		}
+		.buttonElem a
+		{
+			max-width: 320px !important;
+		}
+	}
+		@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400px !important;margin:0px auto;text-align:center;}
+        }
+		a[x-apple-data-detectors] {
+		    color: inherit !important;
+		    text-decoration: none !important;
+		    font-size: inherit !important;
+		    font-family: inherit !important;
+		    font-weight: inherit !important;
+		    line-height: inherit !important;
+		}
+	</style>
+	<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+</head>
+<body bgcolor="#f0f0f0" data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1255.0" data-new-gr-c-s-loaded="14.1255.0" style="margin:0; padding:0;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;">
+<center>
+<div class="zppage-container">
+<table bgcolor="#f0f0f0" border="0" cellpadding="0" cellspacing="0" class="contentOuter" id="contentOuter" style="background-color:#f0f0f0;background-color:#f0f0f0; mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;text-align:center;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="100%">
+	<tbody>
+		<tr>
+			<td style=" mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+			<td align="center" style=" mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="contentInner" id="contentInner" style="border-collapse:collapse; border:0px;font-size:12px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;background-color:#ffffff;background-color:#ffffff;width:600px;margin:0px auto;border:0px;" width="600">
+				<tbody>
+					<tr>
+						<td height="570" style="border-collapse:collapse; mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" id="page-container" style="text-align: center; border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" width="100%">
+							<tbody>
+								<tr>
+									<td class="txtsize" id="elm_1700319319447" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319319447" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; padding: 0px; text-align: center;"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319361768_header_(2)_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1710532093512_email_templates_2_(1)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700322529837" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<div class="zpelement-wrapper" id="elm_1700322529837" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+									<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; text-size-adjust: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td class="paddingcomp" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-color: initial; font-size: 12pt; font-family: Arial, Helvetica; line-height: 19pt; border-top-style: none; border-bottom-style: none; padding: 7px 15px;">
+												<div>
+												<p style="font-family: Arial, verdana; font-size: 12px; padding: 0px; margin: 0px; line-height: 25pt;"><font color="#000000" face="Arial, Helvetica" style="font-size: 19pt;"><b>Kwikpic Progress Report: </b></font></p>
+
+												<p style="line-height: 1.7; font-family: Arial, verdana; font-size: 12px; padding: 0px; margin: 0px;"><font face="Arial, Helvetica"><b><font color="#044a7d" style="font-size: 18pt;">Part 3 of ﻿4 </font></b></font></p>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319367052" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319367052" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; padding: 0px; text-align: center;"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319388848_creative_(2)_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700322968824_creative_(4)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319462455" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<div class="zpelement-wrapper" id="elm_1700319462455" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+									<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; text-size-adjust: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td class="paddingcomp" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-color: initial; font-size: 12pt; font-family: Arial, Helvetica; line-height: 19pt; border-top-style: none; border-bottom-style: none; padding: 7px 15px;">
+												<div>
+												<p style="font-family: Arial, verdana; font-size: 12px; padding: 0px; margin: 0px; line-height: 25pt;"><b><font color="#000000" face="Arial, Helvetica" style="font-size: 12pt;">Watch these videos to learn how to</font></b></p>
+
+												<p align="center" style="font-family: Arial, verdana; font-size: 12px; padding: 0px; margin: 0px; line-height: 19pt;"><b><font color="#000000" face="Arial, Helvetica" style="font-size: 12pt;">modify the Basic Group settings!</font></b></p>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319488994" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319488994" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 0px;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/2Dj9892W7AY3tPt8922FLDIbDA/NJXKywo00bkmQkq0Bmr67w" style="border: 0px;" target="_blank"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319507105_creative_2.1_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700323026595_creative_2.1_(3)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /> </a></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319516720" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319516720" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 0px;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/ToAMqY4qq763MEc9ujTVlrcw/NJXKywo00bkmQkq0Bmr67w" style="border: 0px;" target="_blank"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319526190_creative_2.2_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700323058052_creative_2.2_(3)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /> </a></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319535631" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319535631" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 0px;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/xIy2uGJvBQsjhGp6pOFPvg/NJXKywo00bkmQkq0Bmr67w" style="border: 0px;" target="_blank"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319547875_creative_2.3_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700323083280_creative_2.3_(3)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /> </a></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319555530" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319555530" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 0px;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/763BEFTA2DzIywNe763gIjAa3Q/NJXKywo00bkmQkq0Bmr67w" style="border: 0px;" target="_blank"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319563307_creative_2.4_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700323115876_creative_2.4_(3)_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /> </a></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1700319662612" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1700319662612" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="bannerimgpad" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 0px;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/V4bew4SIySbJdpGlc763eS9g/NJXKywo00bkmQkq0Bmr67w" style="border: 0px;" target="_blank"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1700319670304_footer_(2)_(1).png" class="zpImage" height="auto" hspace="0" size="B" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1701242970873_4.1_(1).png" style="width:600px;height:autopx;max-width:600px !important;border:0px;text-align:left;" vspace="0" width="600" /> </a></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1701182361150" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; width: 100%; border-collapse: collapse; word-break: break-word; background-color: transparent;">
+										<tbody>
+											<tr>
+												<td class="txtsize" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; padding: 0px; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255);">
+												<div class="zpelement-wrapper image" coupcmp="" id="elm_1701182361150" prodcmp="" style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+												<div>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; width: 100%; text-align: left;">
+													<tbody>
+														<tr>
+															<td class="paddingcomp" style="border-collapse: collapse; border-width: 0px; border-style: initial; border-color: initial; text-align: center; padding: 7px 15px;"><img align="left" alt="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1701182369834_footer_(7)_(1).png" class="zpImage" height="auto" hspace="0" size="F" src="https://stratus.campaign-image.in/images/94165000008085337_zc_v1_1701242947650_4.2_(1).png" style="width:570px;height:autopx;max-width:570px !important;border:0px;text-align:left;" vspace="0" width="570" /></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1710532134701" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<div class="zpelement-wrapper" id="elm_1710532134701" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+									<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; word-break: break-word; text-size-adjust: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td class="paddingcomp" style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-right-color: initial; border-left-color: initial; font-size: 12pt; font-family: Arial, Helvetica; line-height: 19pt; border-top-style: none; border-top-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-color: rgb(255, 255, 255); padding: 24px 72px 3px;">
+												<div componentborder="#ffffff" componentbottombordersize="0px" componentbottomborderstyle="none" componentpaddingbottom="3px" componentpaddingleft="72px" componentpaddingright="72px" componentpaddingtop="24px" componenttopbordersize="0px" componenttopborderstyle="none">
+												<p align="center" style="font-family: Arial, verdana; font-size: 12px; padding: 0px; margin: 0px; line-height: 15pt; word-break: normal; overflow-wrap: normal;"><font color="#333333" style="line-height: 15pt; font-size: 12pt;"><b>Follow Us On</b></font></p>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="txtsize" id="elm_1710532137303" style="border-width: 0px; border-style: initial; border-color: initial; padding: 0px; border-collapse: collapse;" valign="top">
+									<div class="zpelement-wrapper wdgts" id="elm_1710532137303" style="overflow:hidden;word-wrap:break-word;">
+									<table bgcolor="" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding: 0px; border-width: 0px; border-style: initial; border-color: initial; border-collapse: collapse; font-size: 5px; word-break: break-word; text-size-adjust: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td style="border-collapse: collapse; border-width: 0px; border-right-style: initial; border-left-style: initial; border-color: initial; border-top-style: none; border-bottom-style: none; padding: 7px 15px 32px 6px;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" componentpaddingbottom="32px" componentpaddingleft="6px" componentpaddingright="15px" componentpaddingtop="7px" style="border-collapse: collapse; font-size: 12px; min-width: 100%; border-width: initial; border-style: none; border-color: initial;" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+															<table align="center" border="0" cellpadding="0" cellspacing="0" icontext="true" index="1" name="zcsclwdgts_alnmnt" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; margin: auto;">
+																<tbody>
+																	<tr>
+																		<td align="left" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																		<table align="center" border="0" cellpadding="0" cellspacing="0" name="zcsclwdgtscontainer" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;">
+																			<tbody>
+																				<tr>
+																					<td align="left" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;">
+																						<tbody>
+																							<tr>
+																								<td style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																								<table border="0" cellpadding="0" cellspacing="0" style="border-width: initial; border-style: none; border-color: initial;">
+																									<tbody>
+																										<tr>
+																											<td align="left" style="border-collapse: collapse; padding: 0px 9px; border-width: initial; border-style: none; border-color: initial;" valign="middle">
+																											<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;" width="">
+																												<tbody>
+																													<tr>
+																														<td align="center" name="sclwdgtimges" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px 0px 6px; margin: 0px;" valign="middle"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/JVEEEaqYfa892ABTc2evq892fw/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px;" target="_blank"><img alt="Facebook" height="35" src="https://stratus.campaign-image.in/images/94165000008085337_1_1710532143013_zcsclwgtfb1.png" style="border: 0px; margin: 0px; outline: none; text-decoration-line: none; width: 25px; height: 25px;" vspace="10" width="35" /></a></td>
+																													</tr>
+																													<tr>
+																														<td align="center" name="sclwdgtcaptns" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="middle">
+																														<p fntname="Arial" fntsze="10" style="padding: 0px; margin: 0px; line-height: normal; color: rgb(27, 107, 189); font-size: 10pt;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/JVEEEaqYfa892ABTc2evq892fw/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px; line-height: normal; text-decoration-line: none;" target="_blank">Facebook</a></p>
+																														</td>
+																													</tr>
+																												</tbody>
+																											</table>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					</td>
+																					<td align="left" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;">
+																						<tbody>
+																							<tr>
+																								<td style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																								<table border="0" cellpadding="0" cellspacing="0" style="border-width: initial; border-style: none; border-color: initial;">
+																									<tbody>
+																										<tr>
+																											<td align="left" style="border-collapse: collapse; padding: 0px 9px; border-width: initial; border-style: none; border-color: initial;" valign="middle">
+																											<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;" width="">
+																												<tbody>
+																													<tr>
+																														<td align="center" name="sclwdgtimges" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px 0px 6px; margin: 0px;" valign="middle"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/nV4bcJKuSHA763w2hjVIy9GA/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px;" target="_blank"><img alt="LinkedIn" height="35" src="https://stratus.campaign-image.in/images/94165000008085337_2_1710532143051_zcsclwgtlin1.png" style="border: 0px; margin: 0px; outline: none; text-decoration-line: none; width: 25px; height: 25px;" vspace="10" width="35" /></a></td>
+																													</tr>
+																													<tr>
+																														<td align="center" name="sclwdgtcaptns" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="middle">
+																														<p fntname="Arial" fntsze="10" style="padding: 0px; margin: 0px; line-height: normal; color: rgb(27, 107, 189); font-size: 10pt;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/nV4bcJKuSHA763w2hjVIy9GA/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px; line-height: normal; text-decoration-line: none;" target="_blank">LinkedIn</a></p>
+																														</td>
+																													</tr>
+																												</tbody>
+																											</table>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					</td>
+																					<td align="left" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;">
+																						<tbody>
+																							<tr>
+																								<td style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																								<table border="0" cellpadding="0" cellspacing="0" style="border-width: initial; border-style: none; border-color: initial;">
+																									<tbody>
+																										<tr>
+																											<td align="left" style="border-collapse: collapse; padding: 0px 9px; border-width: initial; border-style: none; border-color: initial;" valign="middle">
+																											<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;" width="">
+																												<tbody>
+																													<tr>
+																														<td align="center" name="sclwdgtimges" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px 0px 6px; margin: 0px;" valign="middle"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/vpComwsGYPAiXdpoGfM8gg/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px;" target="_blank"><img alt="Youtube" height="35" src="https://stratus.campaign-image.in/images/94165000008085337_3_1710532143083_zcsclwgtyt1.png" style="border: 0px; margin: 0px; outline: none; text-decoration-line: none; width: 25px; height: 25px;" vspace="10" width="35" /></a></td>
+																													</tr>
+																													<tr>
+																														<td align="center" name="sclwdgtcaptns" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="middle">
+																														<p fntname="Arial" fntsze="10" style="padding: 0px; margin: 0px; line-height: normal; color: rgb(27, 107, 189); font-size: 10pt;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/vpComwsGYPAiXdpoGfM8gg/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px; line-height: normal; text-decoration-line: none;" target="_blank">Youtube</a></p>
+																														</td>
+																													</tr>
+																												</tbody>
+																											</table>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					</td>
+																					<td align="left" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																					<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;">
+																						<tbody>
+																							<tr>
+																								<td style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="top">
+																								<table border="0" cellpadding="0" cellspacing="0" style="border-width: initial; border-style: none; border-color: initial;">
+																									<tbody>
+																										<tr>
+																											<td align="left" style="border-collapse: collapse; padding: 0px 9px; border-width: initial; border-style: none; border-color: initial;" valign="middle">
+																											<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial;" width="">
+																												<tbody>
+																													<tr>
+																														<td align="center" name="sclwdgtimges" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px 0px 6px; margin: 0px;" valign="middle"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/SSuexftss0sScli8u1HYCg/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px;" target="_blank"><img alt="Instagram" height="35" src="https://stratus.campaign-image.in/images/94165000008085337_4_1710532143129_zcsclwgtinsta1.png" style="border: 0px; margin: 0px; outline: none; text-decoration-line: none; width: 25px; height: 25px;" vspace="10" width="35" /></a></td>
+																													</tr>
+																													<tr>
+																														<td align="center" name="sclwdgtcaptns" style="border-collapse: collapse; border-width: initial; border-style: none; border-color: initial; padding: 0px; margin: 0px;" valign="middle">
+																														<p fntname="Arial" fntsze="10" style="padding: 0px; margin: 0px; line-height: normal; color: rgb(27, 107, 189); font-size: 10pt;"><a href="https://sendy.kwikpic.in/l/fTrCWl6SxGmmAxk68hHrRw/SSuexftss0sScli8u1HYCg/NJXKywo00bkmQkq0Bmr67w" style="display: block; font-size: 1px; line-height: normal; text-decoration-line: none;" target="_blank">Instagram</a></p>
+																														</td>
+																													</tr>
+																												</tbody>
+																											</table>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+				<!-- comment the code below to remove unsubscribe button --><!-- from here -->
+				<tbody>
+					<tr align="center">
+						<td style="padding: 10px 0 25px; font-family: Helvetica; font-size: 10px; font-weight: 300">
+						<p>We hope you enjoy emails from Kwikpic. If you wish to unsubscribe, please <a href="https://sendy.kwikpic.in/unsubscribe/C50viH8PpI3ENkFW7636R7639L763UkLH66G0SvkAy8W9gplU/KAX892COBad0892Fxc3mqCoS0Q/NJXKywo00bkmQkq0Bmr67w/a" > click here. </a></p>
+						</td>
+					</tr>
+					<!-- to here -->
+				</tbody>
+			</table>
+			</td>
+			<td style=" mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</center>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+</html>
+<img src="https://sendy.kwikpic.in/t/NJXKywo00bkmQkq0Bmr67w/fTrCWl6SxGmmAxk68hHrRw/a" alt="" style="width:1px;height:1px;"/>
+

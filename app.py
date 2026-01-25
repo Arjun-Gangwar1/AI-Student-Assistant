@@ -4,7 +4,7 @@ from pathlib import Path
 import pathway as pw
 from dotenv import load_dotenv
 from pathway.xpacks.llm.embedders import SentenceTransformerEmbedder
-from pathway.xpacks.llm.splitters import TokenCountSplitter
+from pathway.xpacks.llm.splitters import RecursiveSplitter
 from pathway.xpacks.llm.vector_store import VectorStoreServer
 
 # Set up logging
@@ -71,7 +71,8 @@ def main():
     )
     
     # Create text splitter
-    splitter = TokenCountSplitter(max_tokens=400)
+    # Recursive splitting keeps related text (paragraphs/sentences) together
+    splitter = RecursiveSplitter(chunk_size=1200, chunk_overlap=150)
     
     # Create vector store server
     # This will handle parsing, splitting, embedding, and serving

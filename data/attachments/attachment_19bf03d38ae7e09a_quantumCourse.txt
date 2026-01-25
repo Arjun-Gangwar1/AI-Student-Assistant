@@ -1,0 +1,56 @@
+Attachment from Email ID: 19bf03d38ae7e09a
+Original Filename: quantumCourse.pdf
+File Type: .pdf
+File Path: data/attachments/email_19bf03d38ae7e09a/quantumCourse.pdf
+
+--- Extracted Content ---
+
+--- Page 1 ---
+Quantum Computing : Systems and Architecture
+Abstract
+This five-day, [10-12-hour] course provides a compact but comprehensive introduction to
+quantum computing, covering the fundamentals of qubits, gates, and quantum mechanics,
+key quantum algorithms including Grover and Shor, the architecture and compilation stack
+that maps algorithms to physical hardware, the characteristics and constraints of near-term
+quantum processors, and the principles of quantum error correction and fault-tolerant sys-
+tem design. The program concludes with a full-stack perspective on emerging quantum
+technologies, including control interfaces, resource estimation, and future large-scale archi-
+tectures, preparing participants with a coherent understanding of the quantum computing
+landscape from theory to systems.
+This intensive, five-day, two-hour-per-day short course provides astructured introduction to
+the principles, algorithms, architectures, and system-level aspects of quantum com-
+puting.The course condenses foundational theory, core algorithms, hardware considerations,
+and fault tolerance into a high-level overview.
+Day 1: Quantum Foundations and Hardware
+•Foundational concepts: postulates,qubits,superposition,entanglement, mea-
+surement, and basic quantum gates.
+•Major hardware platforms (superconducting, trapped ions, photonic systems).
+•Quantum control stack overview.
+Day 2: Core Quantum Algorithms
+•Early algorithms (Deutsch–Jozsa, Bernstein–Vazirani).
+•Key algorithms: development ofGrover’s searchandShor’s factoring algo-
+rithm, emphasizing theQuantum Fourier Transform (QFT).
+•Near-Term Approaches (NISQ): VQE, QAOA, and quantum machine learning.
+Day 3: Architectures, Compilers, and NISQ Systems
+•Quantum compilation flow: high-level circuits, intermediate representations,qubit
+routing, scheduling, and optimization.
+•Architecture details: native gate sets, connectivity, pulse-level control, andOpen-
+QASM.
+•NISQ constraints: decoherence, crosstalk, anderror-mitigation techniques.
+Day 4: Quantum Error Correction and Fault Tolerance
+•QEC Fundamentals: noise channels, the stabilizer formalism, and basic codes.
+•Advanced Codes: introduction tosurface codes, syndrome extraction cycles,
+and decoding strategies.
+•Fault Tolerance: logical qubit constructions, transversal gates, andmagic-state
+distillation.
+1
+
+--- Page 2 ---
+Day 5: Full-Stack Quantum Systems and Future Directions
+•System Integration: full-stack view, architectural trade-offs, and integration with
+classical hardware (FPGAs, cryogenic electronics).
+•Software and Control: quantum operating system ideas and cloud-based execution
+frameworks.
+•Future Planning:Resource estimation methods(T-count, logical qubit over-
+heads) and advanced directions (modular networks, qudit architectures).
+2

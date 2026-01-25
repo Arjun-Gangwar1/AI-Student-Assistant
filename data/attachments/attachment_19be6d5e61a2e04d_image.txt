@@ -1,0 +1,8 @@
+Attachment from Email ID: 19be6d5e61a2e04d
+Original Filename: image.png
+File Type: .png
+File Path: data/attachments/email_19be6d5e61a2e04d/image.png
+
+--- Extracted Content ---
+
+Image contains no readable text

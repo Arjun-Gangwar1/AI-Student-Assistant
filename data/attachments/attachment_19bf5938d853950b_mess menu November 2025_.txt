@@ -1,0 +1,26 @@
+Attachment from Email ID: 19bf5938d853950b
+Original Filename: mess menu November 2025_.xlsx
+File Type: .xlsx
+File Path: data/attachments/email_19bf5938d853950b/mess menu November 2025_.xlsx
+
+--- Extracted Content ---
+
+Excel File: mess menu November 2025_.xlsx
+
+============================================================
+Sheet: Sheet1
+Rows: 50, Columns: 9
+Columns: Unnamed: 0, Unnamed: 1, Unnamed: 2, Unnamed: 3, Unnamed: 4, Unnamed: 5, Unnamed: 6, Unnamed: 7, Unnamed: 8
+
+First 10 rows:
+   Unnamed: 0  Unnamed: 1                                              Unnamed: 2 Unnamed: 3      Unnamed: 4 Unnamed: 5 Unnamed: 6   Unnamed: 7                      Unnamed: 8
+0         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+1         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+2         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+3         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+4         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+5         NaN         NaN                              IIT MESS MENU OCTOBER.2025        NaN             NaN        NaN        NaN          NaN                             NaN
+6         NaN         NaN                                                     NaN        NaN             NaN        NaN        NaN          NaN                             NaN
+7         NaN         NaN  BREAK FAST ( 07:30- am To 09:30 am ) SUNDAY ONLY 09.45        NaN             NaN        NaN        NaN          NaN                             NaN
+8         NaN         NaN                                                  Monday    Tuesday       Wednesday   Thursday     Friday     Saturday                          Sunday
+9         NaN         NaN                                                    POHA    UTTAPAM  METHI PARATHA   IDLI VADA       PURI  MASALA DOSA  ALOO PARATHA/ALOO GOBI PARATHA

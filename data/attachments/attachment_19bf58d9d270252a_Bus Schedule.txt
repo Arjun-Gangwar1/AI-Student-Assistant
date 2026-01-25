@@ -1,0 +1,137 @@
+Attachment from Email ID: 19bf58d9d270252a
+Original Filename: Bus Schedule.pdf
+File Type: .pdf
+File Path: data/attachments/email_19bf58d9d270252a/Bus Schedule.pdf
+
+--- Extracted Content ---
+
+--- Page 1 ---
+Institute -Bus Schedule for Working -Weekdays
+*Trip -1 to SDM -hospital to be skipped 
+if there are no passengers for it from 
+the Hostel -PC. In that case, the bus 
+will depart from the main gate at 8:00 
+AM and return from Jubilee -Circle at 
+8:40 AM as per Trip -2.
+Page No. 1 of 5Trips Time Starting -PointVia
+Time End-Point
+Time Stop Time Stop Time Stop
+1 7:30 AM Hostel -PC 8:10 AM SDM -Hospital*
+2 8:40 AM Jubilee -Circle 8:50 AM New Bus -stand 9:10 AMMain -Gate 
+(Check -in)9:20 AM Hostel -PC
+3 11:10 AM Hostel -PC 12:00 PM SDM -Hospital
+4 12:05 PM SDM -Hospital 12:45 PM New Bus -stand 1:10 PM Bhoopali 1:25 PMMain -Gate 
+(Check -in)1:30 PM Hostel -PC
+Lunch -time Shuttle (See Page -2)
+5 2:30 PM Hostel -PC 2:35 PM A1-A2 2:40 PMMain -Gate 
+(Check -out)3:00 PM Bhoopali 
+6 3:00 PM Bhoopali 4:00 PM SDM -Hospital
+7 4:05 PM SDM -Hospital 5:05 PM New Bus -stand 5:30 PM Bhoopali 5:45 PMMain -Gate 
+(Check -in)5:50 PM Hostel -PC
+8 6:25 PM Hostel -PC 6:30 PMMain -Gate 
+(Check -out)6:45 PMHigh -court 
+Main -Gate7:00 PMNew -Bus Stand 
+Dharwad
+9 7:05 PMNew -Bus Stand 
+Dharwad7:30 PM Bhoopali 7:40 PMMain -Gate 
+(Check -in)7:45 PM Hostel -PC
+10 7:50 PM Hostel -PC 7:55 PMMain -Gate 
+(Check -out)8:10 PMHigh -court 
+Main -Gate8:25 PMNew -Bus Stand 
+Dharwad
+11 8:30 PMNew -Bus Stand 
+Dharwad8:55 PM Bhoopali 9:05 PMMain -Gate 
+(Check -in)9:10 PM Hostel -PC
+
+--- Page 2 ---
+Institute -Bus Schedule for Saturday
+Page No. 2 of 5Saturday
+Trips Time Starting -PointVia
+Time End-Point Vehicle
+Time Stop Time Stop Time Stop
+1 9:00 AM Hostel -PC 9:05 AMMain -Gate 
+(Check -out)9:20 AM Bhoopali 9:35 AMNew -Bus 
+Stand 
+Dharwad9:55 AM SDM -Hospital Institute -Bus
+2 10:25 AM Jubilee -Circle 10:35 AM New Bus -stand 10:55 AMMain -Gate 
+(Check -in)11:05 AM Hostel -PC Institute -Bus
+3 11:10 AM Hostel -PC 11:15 AMMain -Gate 
+(Check -out)11:30 AM Bhoopali 11:45 AMNew -Bus 
+Stand 
+Dharwad12:00 PM SDM -Hospital Institute -Bus
+4 12:05 PM SDM -Hospital 12:45 PM New Bus -stand 1:10 PM Bhoopali 1:25 PMMain -Gate 
+(Check -in)1:30 PM Hostel -PC Institute -Bus
+5 5:30 PM Hostel -PC 5:35 PMMain -Gate 
+(Check -out)5:50 PMHigh -court 
+Main -Gate6:05 PMNew -Bus Stand 
+DharwadInstitute -Bus
+6 6:10 PMNew -Bus Stand 
+Dharwad6:30 PM Bhoopali 6:40 PMMain -Gate 
+(Check -in)6:45 PM Hostel -PC Institute -Bus
+7 7:35 PM Hostel -PC 7:40 PMMain -Gate 
+(Check -out)7:55 PMHigh -court 
+Main -Gate8:10 PMNew -Bus Stand 
+DharwadInstitute -Bus
+8 8:15 PMNew -Bus Stand 
+Dharwad8:35 PM Bhoopali 8:45 PMMain -Gate 
+(Check -in)8:50 PM Hostel -PC Institute -Bus
+
+--- Page 3 ---
+Sunday/Institute -Holidays
+Trips Time Starting -PointVia
+Time End-Point Vehicle
+Time Stop Time Stop Time Stop
+1 10:00 AM Hostel -PC 10:05 AMMain -Gate 
+(Check -out)10:20 AM Bhoopali 10:40 AMNew -Bus Stand 
+DharwadInstitute -Bus
+2 10:50 AMNew -Bus Stand 
+Dharwad11:15 AMHigh -court Main -
+Gate11:25 AMMain -Gate 
+(Check -in)11:30 AM Hostel -PC Institute -Bus
+3 12:30 PM Hostel -PC 12:35 PMMain -Gate 
+(Check -out)12:50 PMHigh -court 
+Main -Gate1:05 PMNew -Bus Stand 
+DharwadInstitute -Bus
+4 1:15 PMNew -Bus Stand 
+Dharwad1:35 PM Bhoopali 1:50 PMMain -Gate 
+(Check -in)1:55 PM Hostel -PC Institute -Bus
+5 5:30 PM Hostel -PC 5:35 PMMain -Gate 
+(Check -out)5:50 PMHigh -court 
+Main -Gate6:05 PMNew -Bus Stand 
+DharwadInstitute -Bus
+6 6:10 PMNew -Bus Stand 
+Dharwad6:30 PM Bhoopali 6:40 PMMain -Gate 
+(Check -in)6:45 PM Hostel -PC Institute -Bus
+7 7:35 PM Hostel -PC 7:40 PMMain -Gate 
+(Check -out)7:55 PMHigh -court 
+Main -Gate8:10 PMNew -Bus Stand 
+DharwadInstitute -Bus
+8 8:15 PMNew -Bus Stand 
+Dharwad8:35 PM Bhoopali 8:45 PMMain -Gate 
+(Check -in)8:50 PM Hostel -PC Institute -BusInstitute -Bus Schedule for Sunday and Institute -Holidays
+Page No. 3 of 5
+
+--- Page 4 ---
+Institute -Bus Schedule for Lunch -time Shuttle -Service 
+(within the Campus on Working -Weekdays)
+Trips TimeStarting -
+PointVia
+Time End-Point
+Time Stop Time Stop
+1 1:35 PM Hostel -PC 1:38 PM A1 1:40 PM CLT 1:45 PM A2/Admin
+2 1:45 PM A2/Admin 1:47 PM A1 - 1:50 PM Hostel -PC
+3 1:55 PM Hostel -PC 1:58 PM A1 2:00 PM CLT 2:05 PM A2/Admin
+4 2:05 PM A2/Admin 2:07 PM A1 - 2:10 PM Hostel -PC
+5 2:15 PM Hostel -PC 2:18 PM A1 2:20 PM CLT 2:25 PM A2/Admin
+6 2:25 PM A2/Admin 2:27 PM A1 - 2:30 PM Hostel -PC
+Page No. 4 of 5
+
+--- Page 5 ---
+KSRTC Bus Schedule (Monday – Saturday)
+Scheduled Departure from CBT, Dharwad to IIT 
+DharwadScheduled Departure from IIT Dharwad Main -Gate 
+towards New Bus -Stand, Dharwad
+8:10 AM 8:45 AM
+1:00 PM 2:20 PM
+5:30 PM 6:00 PM
+Page No. 5 of 5

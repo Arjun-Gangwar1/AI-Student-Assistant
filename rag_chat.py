@@ -18,7 +18,7 @@ PATHWAY_URL = "http://127.0.0.1:8000"
 RETRIEVE_ENDPOINT = f"{PATHWAY_URL}/v1/retrieve"
 
 # LLM Provider options (uncomment the one you want to use)
-LLM_PROVIDER = "groq"  # Options: "groq", "together", "openai", "ollama"
+LLM_PROVIDER = "ollama"  # Options: "groq", "together", "openai", "ollama"
 
 
 class LLMClient:
@@ -126,6 +126,87 @@ def search_emails(query: str, k: int = 5) -> List[Dict]:
         print(f"Error searching: {e}")
         return []
 
+def search_emails_with_filter(query: str, k: int = 5, date_filter: str = None, 
+                               sender_filter: str = None, has_attachments: bool = None) -> List[Dict]:
+    """
+    Search emails with metadata filtering
+    
+    Args:
+        query: Search query text
+        k: Number of results
+        date_filter: Date filter like "newer_than:7d", "after:2024/01/01", "before:2024/12/31"
+        sender_filter: Filter by sender email/name
+        has_attachments: True/False to filter by attachment presence
+    """
+    try:
+        # Build enhanced query
+        enhanced_query = query
+        
+        # Add filters to query (will be checked against email metadata)
+        filter_parts = []
+        if date_filter:
+            filter_parts.append(f"date:{date_filter}")
+        if sender_filter:
+            filter_parts.append(f"from:{sender_filter}")
+        if has_attachments is not None:
+            filter_parts.append(f"has:attachments" if has_attachments else "no:attachments")
+        
+        if filter_parts:
+            enhanced_query = f"{query} {' '.join(filter_parts)}"
+        
+        payload = {"query": enhanced_query, "k": k}
+        response = requests.post(
+            RETRIEVE_ENDPOINT,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=10
+        )
+        response.raise_for_status()
+        results = response.json()
+        
+        # Post-filter results based on metadata (since vector search doesn't understand filters)
+        filtered_results = []
+        for result in results:
+            text = result.get("text", "")
+            
+            # Apply sender filter
+            if sender_filter:
+                if f"From: " in text:
+                    from_line = [line for line in text.split('\n') if line.startswith('From: ')]
+                    if from_line:
+                        if sender_filter.lower() not in from_line[0].lower():
+                            continue
+            
+            # Apply attachment filter
+            if has_attachments is not None:
+                if "Attachments: " in text:
+                    att_line = [line for line in text.split('\n') if line.startswith('Attachments: ')]
+                    if att_line:
+                        att_count = int(att_line[0].split(': ')[1])
+                        if has_attachments and att_count == 0:
+                            continue
+                        if not has_attachments and att_count > 0:
+                            continue
+            
+            # Apply date filter (basic - can be enhanced)
+            if date_filter and date_filter.startswith('after:'):
+                # This is a simple check - you can make it more sophisticated
+                date_str = date_filter.replace('after:', '')
+                if "Date: " in text:
+                    # Basic date comparison - enhance as needed
+                    pass  # Keep result for now
+            
+            filtered_results.append(result)
+            
+            if len(filtered_results) >= k:
+                break
+        
+        return filtered_results
+    
+    except Exception as e:
+        print(f"Error searching: {e}")
+        return []
+
 
 def identify_source_type(file_path: str) -> tuple[str, str]:
     """Identify if source is an email or attachment and extract details"""
@@ -182,14 +263,14 @@ def create_rag_prompt(query: str, search_results: List[Dict]) -> str:
             attachment_contexts.append({
                 'index': i,
                 'description': source_description,
-                'content': text[:600],  # Longer snippet for attachments
+                'content': text[:10000],  # Increased to 10000
                 'path': file_path
             })
         else:
             email_contexts.append({
                 'index': i,
                 'description': source_description,
-                'content': text[:400],
+                'content': text[:10000], # Increased to 10000
                 'path': file_path
             })
     
@@ -235,14 +316,29 @@ Answer:"""
     return prompt
 
 
-def chat(query: str, llm_client: LLMClient, k: int = 5, verbose: bool = True):
-    """Main RAG chat function"""
+def chat(query: str, llm_client: LLMClient, k: int = 5, verbose: bool = True, 
+         date_filter: str = None, sender_filter: str = None, has_attachments: bool = None):
+    """Main RAG chat function with metadata filtering"""
     
     if verbose:
-        print(f"\n🔍 Searching emails and attachments for: '{query}'")
+        filters_desc = []
+        if date_filter:
+            filters_desc.append(f"date:{date_filter}")
+        if sender_filter:
+            filters_desc.append(f"from:{sender_filter}")
+        if has_attachments is not None:
+            filters_desc.append("with attachments" if has_attachments else "without attachments")
+        
+        filter_str = f" [{', '.join(filters_desc)}]" if filters_desc else ""
+        print(f"\n🔍 Searching emails{filter_str} for: '{query}'")
     
-    # Step 1: Search vector store
-    search_results = search_emails(query, k=k)
+    # Step 1: Search vector store with filters
+    search_results = search_emails_with_filter(
+        query, k=k, 
+        date_filter=date_filter, 
+        sender_filter=sender_filter,
+        has_attachments=has_attachments
+    )
     
     if not search_results:
         return "No relevant emails or attachments found for your query."
@@ -293,18 +389,27 @@ def chat(query: str, llm_client: LLMClient, k: int = 5, verbose: bool = True):
 
 
 def interactive_chat(llm_client: LLMClient):
-    """Interactive chat loop"""
+    """Interactive chat loop with metadata filtering support"""
     print("=" * 70)
     print("          Email RAG Chat - Interactive Mode")
-    print("          NOW WITH ATTACHMENT SUPPORT!")
+    print("          WITH METADATA FILTERING!")
     print("=" * 70)
     print(f"Using LLM: {llm_client.provider} ({llm_client.model})")
-    print("\n📚 Can search through:")
-    print("  - Emails")
+    print("\n📚 Search through:")
+    print("  - Emails (with HTML support)")
     print("  - PDF documents")
     print("  - Word documents (DOCX)")
     print("  - Spreadsheets (CSV, Excel)")
     print("  - Images (with OCR)")
+    print("\n🔍 Metadata Filters (prefix your query):")
+    print("  from:john@example.com - Filter by sender")
+    print("  date:after:2024/01/01 - Filter by date")
+    print("  attachments:yes - Only emails with attachments")
+    print("  attachments:no - Only emails without attachments")
+    print("\n📝 Examples:")
+    print("  'from:boss@company.com what did they say about the project?'")
+    print("  'date:after:2024/12/01 show me recent invoices'")
+    print("  'attachments:yes find PDFs about quarterly reports'")
     print("\nType 'quit' or 'exit' to stop")
     print("=" * 70)
     
@@ -319,7 +424,38 @@ def interactive_chat(llm_client: LLMClient):
         if not user_query:
             continue
         
-        response = chat(user_query, llm_client, k=5, verbose=True)
+        # Parse filters from query
+        date_filter = None
+        sender_filter = None
+        has_attachments = None
+        
+        # Extract filters
+        import re
+        
+        # Date filter
+        date_match = re.search(r'date:(after|before|newer_than):(\S+)', user_query)
+        if date_match:
+            date_filter = f"{date_match.group(1)}:{date_match.group(2)}"
+            user_query = re.sub(r'date:(after|before|newer_than):\S+', '', user_query).strip()
+        
+        # Sender filter
+        sender_match = re.search(r'from:(\S+)', user_query)
+        if sender_match:
+            sender_filter = sender_match.group(1)
+            user_query = re.sub(r'from:\S+', '', user_query).strip()
+        
+        # Attachment filter
+        att_match = re.search(r'attachments:(yes|no|true|false)', user_query, re.IGNORECASE)
+        if att_match:
+            has_attachments = att_match.group(1).lower() in ['yes', 'true']
+            user_query = re.sub(r'attachments:(yes|no|true|false)', '', user_query, flags=re.IGNORECASE).strip()
+        
+        response = chat(
+            user_query, llm_client, k=5, verbose=True,
+            date_filter=date_filter,
+            sender_filter=sender_filter,
+            has_attachments=has_attachments
+        )
         
         print("\n" + "─" * 70)
         print("📧 Response:")

@@ -12,6 +12,7 @@ import pickle
 import time
 from pathlib import Path
 from datetime import datetime
+from dateutil import parser
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -1038,7 +1039,7 @@ File Path: {attachment_path}
     return attachments_info
 
 
-def fetch_new_emails(service, synced_ids, search_query="", max_check=50):
+def fetch_new_emails(service, synced_ids, search_query="", max_check=200):
     """Fetch only new emails that haven't been synced yet"""
     
     try:
@@ -1083,6 +1084,13 @@ def fetch_new_emails(service, synced_ids, search_query="", max_check=50):
                 subject = next((h['value'] for h in headers if h['name'] == 'Subject'), 'No Subject')
                 sender = next((h['value'] for h in headers if h['name'] == 'From'), 'Unknown')
                 date = next((h['value'] for h in headers if h['name'] == 'Date'), '')
+                try:
+                    # Convert to ISO 8601 so Pathway/LLM can sort/filter easily
+                    dt = parser.parse(date)
+                    iso_date = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except:
+                    iso_date = date
+                
                 to = next((h['value'] for h in headers if h['name'] == 'To'), '')
                 
                 body = get_email_body(msg['payload'])
@@ -1108,7 +1116,7 @@ To: {to}
 Cc: {cc}
 Reply-To: {reply_to}
 Subject: {subject}
-Date: {date}
+Date: {iso_date}
 Message-ID: {message['id']}
 Labels: {label_str}
 Attachments: {len(attachments)}
@@ -1193,7 +1201,7 @@ def watch_gmail(service, check_interval=60, search_query="newer_than:7d"):
                 service, 
                 synced_ids, 
                 search_query=search_query,
-                max_check=50
+                max_check=200
             )
             
             if new_count > 0:
@@ -1211,7 +1219,7 @@ def watch_gmail(service, check_interval=60, search_query="newer_than:7d"):
         print("=" * 80)
 
 
-def initial_sync(service, max_emails=100, search_query="newer_than:30d"):
+def initial_sync(service, max_emails=200, search_query="newer_than:30d"):
     """Do initial sync of recent emails"""
     
     logger.info(f"\n🔄 Running initial sync...")
@@ -1223,7 +1231,7 @@ def initial_sync(service, max_emails=100, search_query="newer_than:30d"):
         service,
         synced_ids,
         search_query=search_query,
-        max_check=min(max_emails, 50)  # Gmail API limit per request
+        max_check=min(max_emails, 200)  # Gmail API limit per request
     )
     
     logger.info(f"\n✅ Initial sync complete: {new_count} new emails downloaded")
@@ -1289,7 +1297,7 @@ def main():
     # Configuration
     CHECK_INTERVAL = 60
     SEARCH_QUERY = "newer_than:7d"
-    INITIAL_SYNC_MAX = 50
+    INITIAL_SYNC_MAX = 200
     
     print_dependency_check()
     

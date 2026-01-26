@@ -38,6 +38,9 @@ def main():
         logging.warning(f"Processed attachments path {PROCESSED_ATTACHMENTS_PATH} does not exist. Creating it...")
         Path(PROCESSED_ATTACHMENTS_PATH).mkdir(parents=True, exist_ok=True)
     
+    # PROCESS ATTACHMENTS (New Logic)
+    process_attachments_from_emails(EMAIL_PATH, PROCESSED_ATTACHMENTS_PATH)
+
     # Read email data - format must be "binary" for VectorStoreServer
     emails = pw.io.fs.read(
         path=EMAIL_PATH,
@@ -72,7 +75,7 @@ def main():
     
     # Create text splitter
     # Recursive splitting keeps related text (paragraphs/sentences) together
-    splitter = RecursiveSplitter(chunk_size=1200, chunk_overlap=150)
+    splitter = RecursiveSplitter(chunk_size=800, chunk_overlap=200)
     
     # Create vector store server
     # This will handle parsing, splitting, embedding, and serving
@@ -104,6 +107,113 @@ def main():
         threaded=False,
         with_cache=True,
     )
+
+
+def process_attachments_from_emails(email_dir: str, output_dir: str):
+    """
+    Scans email directory for .eml files, extracts attachments, 
+    converts them to text (OCR/Pandas), and saves to output_dir.
+    This runs ONCE at startup to ensure everything is indexed.
+    """
+    import email
+    import os
+    import io
+    from email import policy
+    
+    # Optional Imports
+    try: from PIL import Image; import pytesseract
+    except ImportError: Image = None
+    try: from pypdf import PdfReader
+    except ImportError: PdfReader = None
+    try: import pandas as pd
+    except ImportError: pd = None
+
+    logging.info(f"🚀 Starting Deep Attachment Processing...")
+    logging.info(f"   - Input: {email_dir}")
+    logging.info(f"   - Output: {output_dir}")
+    
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    
+    count = 0
+    
+    for root, _, files in os.walk(email_dir):
+        for filename in files:
+            if not filename.lower().endswith('.eml'):
+                continue
+                
+            file_path = os.path.join(root, filename)
+            try:
+                with open(file_path, 'rb') as f:
+                    msg = email.message_from_binary_file(f, policy=policy.default)
+                
+                # Iterate over parts
+                for part in msg.walk():
+                    if part.get_content_maintype() == 'multipart':
+                        continue
+                    if part.get('Content-Disposition') is None:
+                        continue
+                        
+                    fname = part.get_filename()
+                    if not fname: continue
+                    
+                    if fname:
+                        # Normalize filename
+                        safe_fname = "".join([c for c in fname if c.isalpha() or c.isdigit() or c in '._-']).strip()
+                        out_name = f"{filename}_{safe_fname}.txt"
+                        out_path = os.path.join(output_dir, out_name)
+                        
+                        # Skip if already processed to save time
+                        if os.path.exists(out_path):
+                            continue
+                            
+                        # Extract content
+                        payload = part.get_payload(decode=True)
+                        if not payload: continue
+                        
+                        text_content = ""
+                        ext = os.path.splitext(fname)[1].lower()
+                        
+                        # Logic Mapping
+                        if ext == '.pdf' and PdfReader:
+                            try:
+                                reader = PdfReader(io.BytesIO(payload))
+                                text_parts = [p.extract_text() for p in reader.pages if p.extract_text()]
+                                text_content = "\n".join(text_parts)
+                                if not text_content: text_content = "[PDF - Scanned/Empty]"
+                            except Exception as e: text_content = f"[PDF Error: {e}]"
+                            
+                        elif ext in ['.jpg', '.jpeg', '.png'] and Image and pytesseract:
+                            try:
+                                img = Image.open(io.BytesIO(payload))
+                                text_content = pytesseract.image_to_string(img)
+                                if not text_content.strip(): text_content = "[Image - No Text Found]"
+                            except Exception as e: text_content = f"[OCR Error: {e}]"
+                            
+                        elif ext in ['.xlsx', '.xls', '.csv'] and pd:
+                            try:
+                                bio = io.BytesIO(payload)
+                                if ext == '.csv': df = pd.read_csv(bio)
+                                else: df = pd.read_excel(bio)
+                                text_content = df.head(50).to_markdown(index=False) # Index first 50 rows
+                            except Exception as e: text_content = f"[Spreadsheet Error: {e}]"
+                        
+                        else:
+                            # Try text decode
+                            try: text_content = payload.decode('utf-8')
+                            except: continue # Binary/Unknown
+                        
+                        # WRITE TO PROCESSED FOLDER
+                        if text_content:
+                            final_content = f"Source Email: {filename}\nAttachment: {fname}\n\nContent:\n{text_content}"
+                            with open(out_path, 'w', encoding='utf-8') as out_f:
+                                out_f.write(final_content)
+                            count += 1
+                            logging.info(f"   [+] Filtered attachment: {fname}")
+
+            except Exception as e:
+                logging.error(f"Error processing email {filename}: {e}")
+                
+    logging.info(f"✅ Attachment Processing Complete. Processed {count} new attachments.")
 
 
 if __name__ == "__main__":

@@ -73,10 +73,10 @@ ATTACHMENT_CONFIG = {
 def extract_pdf_text(file_path: Path) -> str:
     """Extract text from PDF with better error handling"""
     try:
-        import PyPDF2
+        import pypdf
         text_parts = []
         with open(file_path, 'rb') as f:
-            pdf_reader = PyPDF2.PdfReader(f)
+            pdf_reader = pypdf.PdfReader(f)
             total_pages = len(pdf_reader.pages)
             
             for page_num, page in enumerate(pdf_reader.pages, 1):
@@ -1038,7 +1038,7 @@ File Path: {attachment_path}
     return attachments_info
 
 
-def fetch_new_emails(service, synced_ids, search_query="", max_check=200):
+def fetch_new_emails(service, synced_ids, search_query="", max_check=50):
     """Fetch only new emails that haven't been synced yet"""
     
     try:
@@ -1193,7 +1193,7 @@ def watch_gmail(service, check_interval=60, search_query="newer_than:7d"):
                 service, 
                 synced_ids, 
                 search_query=search_query,
-                max_check=200
+                max_check=50
             )
             
             if new_count > 0:
@@ -1223,7 +1223,7 @@ def initial_sync(service, max_emails=100, search_query="newer_than:30d"):
         service,
         synced_ids,
         search_query=search_query,
-        max_check=min(max_emails, 200)  # Gmail API limit per request
+        max_check=min(max_emails, 50)  # Gmail API limit per request
     )
     
     logger.info(f"\n✅ Initial sync complete: {new_count} new emails downloaded")
@@ -1289,7 +1289,7 @@ def main():
     # Configuration
     CHECK_INTERVAL = 60
     SEARCH_QUERY = "newer_than:7d"
-    INITIAL_SYNC_MAX = 200
+    INITIAL_SYNC_MAX = 50
     
     print_dependency_check()
     

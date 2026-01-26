@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f9f8f4;
+            color: #2d2d2d;
+        }
+
+        .accent-text {
+            color: #57b0d9;
+        }
+
+        .accent-bg {
+            background-color: #57b0d9;
+        }
+
+        .user-msg {
+            background-color: #f0ede4;
+        }
+
+        .spinner {
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 2px solid #57b0d9;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #b0b0b0;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .typing-dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .input-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .filter-panel-shadow {
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="h-screen overflow-hidden">
+    <div id="app" class="h-full"></div>
+
+    <script>
+        window.addEventListener('load', function () {
+            const { useState, useEffect, useRef } = React;
+            const h = React.createElement;
+
+            const Icons = {
+                Plus: () => h('svg', { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 4v16m8-8H4" })),
+                Send: () => h('svg', { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14 5l7 7m0 0l-7 7m7-7H3" })),
+                Filter: () => h('svg', { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" })),
+                Paperclip: () => h('svg', { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" })),
+                User: () => h('svg', { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" })),
+                Calendar: () => h('svg', { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, h('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" })),
+            };
+
+            function EmailRAGDashboard() {
+                const [query, setQuery] = useState('');
+                const [messages, setMessages] = useState([]);
+                const [loading, setLoading] = useState(false);
+                const [filters, setFilters] = useState({ sender: '', dateAfter: '', dateBefore: '', hasAttachments: null });
+                const [showFilters, setShowFilters] = useState(false);
+                const messagesEndRef = useRef(null);
+
+                const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+                useEffect(scrollToBottom, [messages, loading]);
+
+                const handleSearch = async () => {
+                    if (!query.trim()) return;
+                    const userMsg = { role: 'user', content: query, timestamp: new Date().toISOString() };
+                    setMessages(prev => [...prev, userMsg]);
+                    setLoading(true);
+                    const q = query;
+                    setQuery('');
+                    setShowFilters(false); // Auto-hide filters on search
+
+                    try {
+                        const res = await fetch('/api/chat', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                query: q,
+                                sender_filter: filters.sender || null,
+                                date_filter: filters.dateAfter ? 'after:' + filters.dateAfter : null,
+                                has_attachments: filters.hasAttachments
+                            })
+                        });
+                        if (!res.ok) throw new Error("Server error");
+                        const data = await res.json();
+                        setMessages(prev => [...prev, {
+                            role: 'assistant',
+                            content: data.response,
+                            sources: data.sources || [],
+                            searched: data.searched,
+                            timestamp: new Date().toISOString()
+                        }]);
+                    } catch (e) {
+                        setMessages(prev => [...prev, { role: 'error', content: "Error: " + e.message, timestamp: new Date().toISOString() }]);
+                    } finally { setLoading(false); }
+                };
+
+                const resetChat = () => { setMessages([]); setQuery(''); };
+
+                const hasActiveFilters = filters.sender || filters.dateAfter || filters.hasAttachments;
+
+                return h('div', { className: "flex h-screen flex-col relative" },
+
+                    // Top Left New Chat Button
+                    h('button', {
+                        onClick: resetChat,
+                        className: "absolute top-4 left-4 p-2 bg-white rounded-xl shadow-sm border border-black/5 text-slate-500 hover:text-[#57b0d9] hover:border-[#57b0d9]/30 transition-all z-50 flex items-center space-x-2"
+                    }, h(Icons.Plus), h('span', { className: "text-sm font-medium" }, "New Chat")),
+
+                    // Main Chat Area
+                    h('div', { className: "flex-1 overflow-y-auto custom-scrollbar p-0" },
+                        h('div', { className: "max-w-3xl mx-auto pt-24 pb-48 px-6" },
+                            messages.length === 0 ?
+                                h('div', { className: "flex flex-col items-center justify-center min-h-[50vh] text-center space-y-6" },
+                                    h('div', { className: "w-12 h-12 rounded-xl accent-bg flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#57b0d9]/20" }, "C"),
+                                    h('h2', { className: "text-2xl font-semibold tracking-tight text-slate-800" }, "Good afternoon, Arnav"),
+                                    h('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-2xl mt-4" },
+                                        ['What did Sarah say about the budget?', 'Summary of recent invoices'].map(t =>
+                                            h('button', { onClick: () => setQuery(t), className: "p-4 bg-white border border-black/5 rounded-xl text-left hover:border-[#57b0d9] transition-all input-shadow group" },
+                                                h('span', { className: "text-sm font-medium text-slate-600 group-hover:text-[#57b0d9]" }, `"${t}"`)
+                                            )
+                                        )
+                                    )
+                                )
+                                : h('div', null,
+                                    messages.map((msg, idx) =>
+                                        h('div', { key: idx, className: `flex mb-6 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}` },
+                                            h('div', { className: `max-w-[85%] ${msg.role === 'user' ? 'user-msg py-3 px-4 rounded-[1.25rem]' : 'pr-4'} text-[15px] leading-relaxed` },
+                                                h('div', { className: "whitespace-pre-wrap" }, msg.content),
+                                                msg.sources && msg.sources.length > 0 && h('div', { className: "mt-4 pt-4 border-t border-black/5" },
+                                                    h('div', { className: "text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2" }, "Sources"),
+                                                    h('div', { className: "flex flex-wrap gap-2" },
+                                                        msg.sources.map(s => h('div', { key: s.index, className: "bg-white border border-black/5 rounded-lg px-2 py-1 text-xs flex items-center space-x-1 text-slate-500" }, h('span', null, s.type === 'email' ? '📧' : '📎'), h('span', { className: "truncate max-w-[150px]" }, s.description || `Source ${s.index}`)))
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    loading && h('div', { className: "flex mb-6 justify-start" },
+                                        h('div', { className: "py-3 px-4" },
+                                            h('div', { className: "flex space-x-1" },
+                                                h('div', { className: "typing-dot" }),
+                                                h('div', { className: "typing-dot" }),
+                                                h('div', { className: "typing-dot" })
+                                            )
+                                        )
+                                    )
+                                ),
+                            h('div', { ref: messagesEndRef })
+                        )
+                    ),
+
+                    // Fixed Input Area Container
+                    h('div', { className: "absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#f9f8f4] via-[#f9f8f4]/95 to-transparent pointer-events-none" },
+                        h('div', { className: "max-w-3xl mx-auto pointer-events-auto relative" },
+
+                            // Collapsible Filter Panel (Appears ABOVE input)
+                            showFilters && h('div', { className: "mb-3 bg-white rounded-xl border border-black/5 p-4 filter-panel-shadow animate-fade-in-up" },
+                                h('div', { className: "flex items-center justify-between mb-3" },
+                                    h('span', { className: "text-xs font-bold uppercase tracking-widest text-slate-400" }, "Search Filters"),
+                                    h('button', { onClick: () => setFilters({ sender: '', dateAfter: '', hasAttachments: null }), className: "text-xs text-[#57b0d9] hover:underline" }, "Clear")
+                                ),
+                                h('div', { className: "flex gap-3 flex-wrap" },
+                                    h('div', { className: "flex-1 min-w-[120px]" },
+                                        h('div', { className: "flex items-center space-x-2 bg-slate-50 rounded-lg px-2 py-1.5 border border-black/5" },
+                                            h('span', { className: "text-slate-400" }, h(Icons.User)),
+                                            h('input', { type: "text", placeholder: "Sender", value: filters.sender, onChange: e => setFilters({ ...filters, sender: e.target.value }), className: "bg-transparent text-sm w-full outline-none placeholder:text-slate-400" })
+                                        )
+                                    ),
+                                    h('div', { className: "flex-1 min-w-[120px]" },
+                                        h('div', { className: "flex items-center space-x-2 bg-slate-50 rounded-lg px-2 py-1.5 border border-black/5" },
+                                            h('span', { className: "text-slate-400" }, h(Icons.Calendar)),
+                                            h('input', { type: "date", value: filters.dateAfter, onChange: e => setFilters({ ...filters, dateAfter: e.target.value }), className: "bg-transparent text-sm w-full outline-none text-slate-600" })
+                                        )
+                                    ),
+                                    h('label', { className: "flex items-center space-x-2 px-2 cursor-pointer bg-slate-50 rounded-lg border border-black/5 hover:bg-slate-100 transition-colors" },
+                                        h('input', { type: "checkbox", checked: filters.hasAttachments === true, onChange: e => setFilters({ ...filters, hasAttachments: e.target.checked ? true : null }), className: "accent-[#57b0d9]" }),
+                                        h('span', { className: "text-sm text-slate-600" }, "Attachments")
+                                    )
+                                )
+                            ),
+
+                            // Main Input Pill
+                            h('div', { className: "bg-white rounded-2xl p-2 border border-black/5 input-shadow flex flex-col focus-within:border-slate-300 transition-colors" },
+                                h('textarea', {
+                                    value: query,
+                                    onChange: e => setQuery(e.target.value),
+                                    onKeyDown: e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSearch(); } },
+                                    placeholder: "Reply to Assistant...",
+                                    rows: 1,
+                                    className: "w-full resize-none border-none outline-none px-3 py-2 text-base bg-transparent max-h-40"
+                                }),
+                                h('div', { className: "flex justify-between items-center mt-2 px-1" },
+                                    h('div', { className: "flex space-x-1" },
+                                        h('button', {
+                                            onClick: () => setShowFilters(!showFilters),
+                                            className: `p-2 rounded-lg transition-colors flex items-center space-x-1 ${hasActiveFilters || showFilters ? 'text-[#57b0d9] bg-[#57b0d9]/10' : 'text-slate-400 hover:text-slate-600 hover:bg-black/5'}`
+                                        }, h(Icons.Filter))
+                                    ),
+                                    h('div', { className: "flex items-center space-x-3" },
+                                        h('div', { className: "text-[10px] font-bold text-slate-300 uppercase tracking-widest hidden sm:block" }, "LLAMA 3.1"),
+                                        h('button', {
+                                            onClick: handleSearch,
+                                            disabled: !query.trim() || loading,
+                                            className: `p-2 rounded-lg transition-all ${query.trim() ? 'accent-bg text-white shadow-sm' : 'bg-slate-100 text-slate-300'}`
+                                        }, loading ? h('div', { className: "spinner border-white border-t-transparent" }) : h(Icons.Send))
+                                    )
+                                )
+                            )
+                        ),
+                        h('div', { className: "text-center text-[11px] text-slate-400 mt-2 pointer-events-auto" }, "Assistant can make mistakes. Please double-check responses.")
+                    )
+                );
+            }
+
+            const root = ReactDOM.createRoot(document.getElementById('app'));
+            root.render(h(EmailRAGDashboard));
+        });
+    </script>
+</body>
+
+</html>

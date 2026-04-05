@@ -1,3 +1,7 @@
+# 🚀 AI Student Assistant (RAG-based Gmail Assistant)
+
+> Intelligent Gmail assistant powered by LLMs + Retrieval-Augmented Generation (RAG)
+
 # Gmail Assistant
 
 A powerful, RAG-enhanced email assistant that helps you manage, search, and analyze your Gmail inbox using local LLMs and Pathway.
@@ -54,6 +58,12 @@ A powerful, RAG-enhanced email assistant that helps you manage, search, and anal
 -   `web_server.py`: Flask server that handles the frontend, file uploads, and acts as a gateway to Pathway and Ollama.
 -   `gmail_watcher.py`: Fetches emails from Gmail and saves them to `data/emails` for indexing.
 -   `static/index.html`: The single-page application dashboard.
+
+## 🧠 Key Highlights
+- RAG-based semantic search over emails
+- Real-time email analysis using LLM (Llama 3 via Ollama)
+- Interactive chatbot for inbox queries
+- Privacy-first: runs locally
 
 ## 📝 License
 
